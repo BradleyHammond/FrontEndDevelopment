@@ -20,7 +20,7 @@
                 if (this.msg == "Login"){
                     this.msg = "Sign Out"
                     this.createPost = '<a href="#">Create Post</a>';
-                    this.contactRequests = '<a href="#">\t Contact Requests</a>';
+                    this.contactRequests = '<a href="#"> Contact Requests</a>';
                 } else{
                 this.msg = "Login";
                 this.createPost = '';
@@ -28,6 +28,19 @@
                 }
             }
         }
-
-}
+    }
 </script>
+
+<style scoped>
+#header {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: orangered;
+    top: 0;
+    left: 0;
+    padding: 25px;
+    
+}
+
+</style>
