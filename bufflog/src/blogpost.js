@@ -1,6 +1,6 @@
 export default class Blogpost {
-    constructor(id, title, author, date, body){
-        this.id = id;
+    constructor(title, author, date, body){
+        
         this.title = title;
         this.author = author;
         this.date = date;

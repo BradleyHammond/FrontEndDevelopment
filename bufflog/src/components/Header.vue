@@ -1,30 +1,37 @@
+
+
 <template>
     <div id = "header">
         <span v-html="createPost" id="create-post-link"></span>
         <span v-html="contactRequests" id="contact-request-link"></span>
-        <input type="button" v-model="msg" @click="clicking()" />
+        <input type="button" v-model="msg" @click="login()" />
     </div>
 </template>
 
 <script>
+import database from "@/database.js"
+import User from "@/User.js"
+
     export default {
         data() {
             return{
                 msg: "Login",
                 createPost: '',
-                contactrRequests: ''
+                contactRequests: ''
             };
         },
         methods: {
-            clicking(){
-                if (this.msg == "Login"){
+            login(){
+                if (database.User.length == 0){
+                    database.User.push(new User());
                     this.msg = "Sign Out"
                     this.createPost = '<a href="#">Create Post</a>';
                     this.contactRequests = '<a href="#"> Contact Requests</a>';
                 } else{
-                this.msg = "Login";
-                this.createPost = '';
-                this.contactrequests = '';
+                    database.User.pop();
+                    this.msg = "Login";
+                    this.createPost = '';
+                    this.contactrequests = '';
                 }
             }
         }
