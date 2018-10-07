@@ -7,25 +7,27 @@
 </template>
 
 <script>
-    export default{
-    data() {
-        return{
-            msg: "Login",
-            createPost: '',
-            contactrequests: ''
-        };
-    },
-    methods: {
-        clicking(){
-            if (this.msg == "Login"){
-                this.msg = "Sign Out"
-                this.createPost = '<a href="#">Create Post</a>';
-            } else{
-            this.msg = "Login";
-            this.createPost = '';
-            this.contactrequests = '';
+    export default {
+        data() {
+            return{
+                msg: "Login",
+                createPost: '',
+                contactrRequests: ''
+            };
+        },
+        methods: {
+            clicking(){
+                if (this.msg == "Login"){
+                    this.msg = "Sign Out"
+                    this.createPost = '<a href="#">Create Post</a>';
+                    this.contactRequests = '<a href="#">\t Contact Requests</a>';
+                } else{
+                this.msg = "Login";
+                this.createPost = '';
+                this.contactrequests = '';
+                }
             }
         }
-    }
 
 }
+</script>
