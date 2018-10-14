@@ -8,8 +8,13 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "vue": "^2.5.17",
     "vue-router": "^3.0.1"
+=======
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "vue": "^2.5.17"
+>>>>>>> 26e514a731c7c9d1881e29e69e85cc69bc94608e
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.4",

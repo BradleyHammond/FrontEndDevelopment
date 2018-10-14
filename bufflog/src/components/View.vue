@@ -5,7 +5,11 @@
             <div v-if="blogPost.id == blogRouterId" class="content">
                 <h2 class="blog-title">{{ blogPost.title }}</h2>
                 <div class="blog-info">
+<<<<<<< HEAD
                 <div>Created: {{ blogPost.dateCreated }} |  By: {{ blogPost.author }}</div>&nbsp;&nbsp;&nbsp;
+=======
+                <span>Created: {{ blogPost.dateCreated }} |  By: {{ blogPost.author }}</span>&nbsp;&nbsp;&nbsp;
+>>>>>>> 26e514a731c7c9d1881e29e69e85cc69bc94608e
                 <span class="post-changes" v-if="database.User.length > 0">
                     <span class="edit-post"><router-link :to="'/edit:' + blogPost.id">Edit Post</router-link></span>&nbsp;&nbsp;&nbsp;
                     <span class="delete-post" v-on:click="database.Posts.splice(index, 1)">Delete Post</span>
@@ -26,6 +30,7 @@
                     </ul>
                     <h3>Leave a comment?</h3>
                         <p>
+<<<<<<< HEAD
                             
                             <input type="text" v-model="name" id="name" name="name" placeholder="Your name..">
 
@@ -34,6 +39,18 @@
 
                             <textarea id="comment" v-model="comment" name="comment" placeholder="Write your comment..." style="height:200px; width:100% "></textarea>
                        
+=======
+                            <label for="name">Name</label>
+                            <input type="text" v-model="name" id="name" name="name" placeholder="Your name..">
+                            <label for="email">Email</label>
+                            <input type="text" v-model="email" id="email" name="email" placeholder="Your email address..">
+                        </p>
+                        <p>
+                            <label for="comment">Comment</label>
+                            <textarea id="comment" v-model="comment" name="comment" placeholder="Write your comment..." style="height:200px"></textarea>
+                        </p>
+                        <p>
+>>>>>>> 26e514a731c7c9d1881e29e69e85cc69bc94608e
                             <input type="submit" value="Submit" class="view-more" id="contact-form-submit" @click="createPostComment(index)" />
                         </p>
                 </div>
@@ -45,7 +62,11 @@
 
 <script>
   import database from "@/database.js"
+<<<<<<< HEAD
   import PostComment from "@/comment"
+=======
+  import PostComment from "@/Comment.js"
+>>>>>>> 26e514a731c7c9d1881e29e69e85cc69bc94608e
 
   export default {
 
@@ -71,6 +92,10 @@
 }
 </script>
 
+<<<<<<< HEAD
 <style scoped>
 
 </style>
+=======
+
+>>>>>>> 26e514a731c7c9d1881e29e69e85cc69bc94608e
