@@ -1,41 +1,29 @@
 <template>
   <div class="container">
     <Header/>
-<<<<<<< HEAD
     <router-view></router-view>
     <Footer/>
-=======
-    <Home/>
->>>>>>> 26e514a731c7c9d1881e29e69e85cc69bc94608e
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import Home from './components/Home.vue'
-<<<<<<< HEAD
 import Edit from './components/Edit.vue'
 import Footer from './components/Footer.vue'
-=======
->>>>>>> 26e514a731c7c9d1881e29e69e85cc69bc94608e
 
 export default {
   name: 'app',
   components: {
     Header,
-<<<<<<< HEAD
     Home,
     Edit,
     Footer
-=======
-    Home
->>>>>>> 26e514a731c7c9d1881e29e69e85cc69bc94608e
   }
 }
 </script>
 
 <style>
-<<<<<<< HEAD
 .container {
     position: absolute;
     width: 1000px;
@@ -44,15 +32,6 @@ export default {
     left: 50%;
     margin-left: -500px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-=======
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: left;
-  color: #2c3e50;
-  margin-top: 60px;
->>>>>>> 26e514a731c7c9d1881e29e69e85cc69bc94608e
 }
 
 #header {
