@@ -1,9 +1,11 @@
-export default class Blogpost {
-    constructor(title, author, date, body){
-        
-        this.title = title;
-        this.author = author;
-        this.date = date;
-        this.body = body;
+export default class BlogPost {
+    constructor(id, title, author, dateCreated, body, tags, comments) {
+      this.id = id;
+      this.title = title;
+      this.author = author;
+      this.dateCreated = dateCreated;
+      this.body = body;
+      this.tags = tags;
+      this.comments = comments;
     }
-}
+  }
