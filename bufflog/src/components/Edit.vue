@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
     <div class="edit-post">
         <a @click="$router.go(-1)" class="go-back">Go back</a>
         <div v-if="database.User.length > 0">
@@ -42,49 +41,3 @@
 <style scoped>
 
 </style>
-=======
-   <div id="footer">
-       <h2>Contact</h2>
-            <p>
-                <label for="name">Name</label>
-                <input type="text" v-model="name" id="name" name="name" placeholder="Your name..">
-                <label for="email">Email</label>
-                <input type="text" v-model="email" id="email" name="email" placeholder="Your email address..">
-            </p>
-            <p>
-                <label for="message">Message</label>
-                <textarea id="message" v-model="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-            </p>
-            <p>
-                <input type="submit" value="Submit" class="view-more" id="contact-form-submit" @click="createContactRequest()" />
-            </p>
-  </div>
-</template>
-
-<script>
-import database from "@/database.js"
-import ContactRequest from "@/contactRequest.js"
-
-   export default {
-   data() {
-        return {
-            database : database,
-            name: '',
-            email: '',
-            message: ''
-        };
-    },
-    methods: {
-        createContactRequest() {
-            var lastIndex = database.ContactRequests[database.ContactRequests.length - 1].id;
-            lastIndex++;
-            database.ContactRequests.push(new ContactRequest(lastIndex, this.name, this.email, this.message));
-            this.name = '';
-            this.email = '';
-            this.message = '';
-        }
-    }
-  }
-</script>
-
->>>>>>> 26e514a731c7c9d1881e29e69e85cc69bc94608e

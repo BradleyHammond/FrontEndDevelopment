@@ -14,10 +14,7 @@
             </p>
             <p>
                 <router-link to="/"><input type="submit" value="Submit Post" class="edit-post-button" @click="createPost()"></router-link>
-<<<<<<< HEAD
                 <router-link to="/"><input type="button" value="Cancel" class="edit-post-button" @click="signUserOut()"></router-link>
-=======
->>>>>>> 26e514a731c7c9d1881e29e69e85cc69bc94608e
             </p>
         </div>
         <div v-else>
@@ -52,9 +49,6 @@
 }
 </script>
 
-<<<<<<< HEAD
 <style scoped>
 
 </style>
-=======
->>>>>>> 26e514a731c7c9d1881e29e69e85cc69bc94608e

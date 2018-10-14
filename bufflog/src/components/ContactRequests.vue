@@ -31,10 +31,6 @@
 }
 </script>
 
-<<<<<<< HEAD
 <style scoped>
 
 </style>
-=======
-
->>>>>>> 26e514a731c7c9d1881e29e69e85cc69bc94608e

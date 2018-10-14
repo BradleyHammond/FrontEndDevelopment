@@ -28,3 +28,6 @@ import User from "@/user.js"
   }
 </script>
 
+<style scoped>
+
+</style>
